@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B03CBC3234F2C8F001E8725 /* EditCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B03CBC2234F2C8F001E8725 /* EditCarViewController.swift */; };
 		3B338F2F234BD62100F58CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B338F2E234BD62100F58CBE /* AppDelegate.swift */; };
 		3B338F31234BD62100F58CBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B338F30234BD62100F58CBE /* SceneDelegate.swift */; };
-		3B338F33234BD62100F58CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B338F32234BD62100F58CBE /* ViewController.swift */; };
+		3B338F33234BD62100F58CBE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B338F32234BD62100F58CBE /* TableViewController.swift */; };
 		3B338F36234BD62100F58CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B338F34234BD62100F58CBE /* Main.storyboard */; };
 		3B338F38234BD62300F58CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B338F37234BD62300F58CBE /* Assets.xcassets */; };
 		3B338F3B234BD62300F58CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B338F39234BD62300F58CBE /* LaunchScreen.storyboard */; };
+		3B338F49234BDCC200F58CBE /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B338F48234BDCC200F58CBE /* Car.swift */; };
+		3B338F4B234CC69C00F58CBE /* CarsCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B338F4A234CC69C00F58CBE /* CarsCatalog.swift */; };
+		3B338F4D234D2ECF00F58CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B338F4C234D2ECF00F58CBE /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B03CBC2234F2C8F001E8725 /* EditCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarViewController.swift; sourceTree = "<group>"; };
 		3B338F2B234BD62100F58CBE /* CarsCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B338F2E234BD62100F58CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B338F30234BD62100F58CBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B338F32234BD62100F58CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B338F32234BD62100F58CBE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3B338F35234BD62100F58CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B338F37234BD62300F58CBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B338F3A234BD62300F58CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B338F3C234BD62300F58CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B338F48234BDCC200F58CBE /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		3B338F4A234CC69C00F58CBE /* CarsCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCatalog.swift; sourceTree = "<group>"; };
+		3B338F4C234D2ECF00F58CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,25 @@
 			children = (
 				3B338F2E234BD62100F58CBE /* AppDelegate.swift */,
 				3B338F30234BD62100F58CBE /* SceneDelegate.swift */,
-				3B338F32234BD62100F58CBE /* ViewController.swift */,
+				3B338F47234BDCAF00F58CBE /* Model */,
+				3B338F32234BD62100F58CBE /* TableViewController.swift */,
+				3B338F4C234D2ECF00F58CBE /* ViewController.swift */,
+				3B03CBC2234F2C8F001E8725 /* EditCarViewController.swift */,
 				3B338F34234BD62100F58CBE /* Main.storyboard */,
 				3B338F37234BD62300F58CBE /* Assets.xcassets */,
 				3B338F39234BD62300F58CBE /* LaunchScreen.storyboard */,
 				3B338F3C234BD62300F58CBE /* Info.plist */,
 			);
 			path = CarsCatalog;
+			sourceTree = "<group>";
+		};
+		3B338F47234BDCAF00F58CBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B338F48234BDCC200F58CBE /* Car.swift */,
+				3B338F4A234CC69C00F58CBE /* CarsCatalog.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B338F33234BD62100F58CBE /* ViewController.swift in Sources */,
+				3B338F4D234D2ECF00F58CBE /* ViewController.swift in Sources */,
+				3B338F33234BD62100F58CBE /* TableViewController.swift in Sources */,
 				3B338F2F234BD62100F58CBE /* AppDelegate.swift in Sources */,
+				3B338F4B234CC69C00F58CBE /* CarsCatalog.swift in Sources */,
+				3B338F49234BDCC200F58CBE /* Car.swift in Sources */,
 				3B338F31234BD62100F58CBE /* SceneDelegate.swift in Sources */,
+				3B03CBC3234F2C8F001E8725 /* EditCarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XHGFK98S7U;
 				INFOPLIST_FILE = CarsCatalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MacBook.CarsCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XHGFK98S7U;
 				INFOPLIST_FILE = CarsCatalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MacBook.CarsCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
