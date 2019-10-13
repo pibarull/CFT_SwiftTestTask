@@ -31,12 +31,11 @@ class Car: Codable {
     let producer: String
     let model: String
     let id = UUID()
+    let bodyType: BodyType
     
-    var bodyType: BodyType
+    // MARK: - VARIABLES
     var color: Color = .Black
     var amount: UInt = 1
-    
-    //TODO: - images
     
     // MARK: - INITIALIZER
     init(releaseYear: Date, producer: String, model: String, bodyType: BodyType, color: Color, amount: UInt) {

@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // MARK: - PRIVATE CONSTANTS AND VARIABLES
     private let bodyDataSource: [String] = [Car.BodyType.Cabriolet.rawValue,
                                         Car.BodyType.Hatchback.rawValue,
                                         Car.BodyType.Sedan.rawValue]
@@ -28,7 +27,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var modelField: UITextField!
     @IBOutlet weak var amountField: UITextField!
     
-    
     @IBOutlet weak var colorPicker: UIPickerView!
     @IBOutlet weak var bodyTypePicker: UIPickerView!
     
@@ -37,7 +35,6 @@ class ViewController: UIViewController {
     private var datePicker: UIDatePicker?
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date
@@ -53,14 +50,12 @@ class ViewController: UIViewController {
         
         self.colorPicker.delegate = self
         colorPicker.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer ) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.view.endEditing(true)
         }
-        
     }
     
     @objc func dateChanged(datePicker: UIDatePicker) {
@@ -89,27 +84,19 @@ class ViewController: UIViewController {
             let bodyType: Car.BodyType = self.bodyType
             let color: Car.Color = self.color
             
-            
             let car = Car.init(releaseYear: releaseYear!, producer: producer, model: model, bodyType: bodyType, color: color, amount: UInt(amount)!)
             
             CarsCatalog.instance.addCar(car: car)
             
             self.performSegue(withIdentifier: "backToTheCatalog", sender: self)
-           
         } else {
             let alertController = UIAlertController(title: nil, message: "You haven't filled all the required filds", preferredStyle: .alert)
-            let OKAction = UIAlertAction(title: "OK", style: .default) { (alert) in
-                
-            }
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (alert) in }
             alertController.addAction(OKAction)
             
             present(alertController, animated: true, completion: nil)
-            
         }
-        
-        
     }
-     
 }
 
 extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
