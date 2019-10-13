@@ -80,10 +80,13 @@ class ViewController: UIViewController {
             let releaseYear: Date? = datePicker?.date
             let producer: String = producerField.text!
             let model: String = modelField.text!
-            let amount: String = amountField.text!
+            var amount: String = amountField.text!
             let bodyType: Car.BodyType = self.bodyType
             let color: Car.Color = self.color
             
+            if amount == "" {
+                amount = "1"
+            }
             let car = Car.init(releaseYear: releaseYear!, producer: producer, model: model, bodyType: bodyType, color: color, amount: UInt(amount)!)
             
             CarsCatalog.instance.addCar(car: car)
